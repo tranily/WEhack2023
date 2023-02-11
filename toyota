@@ -1,2 +1,50 @@
-Hello 
-Hi
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    char enter;
+cout<<"Hello!!"<<endl;
+cout<<"we are trivago 3.0."<<endl;
+cout<<"We are here to make your travel experience in Dallas your most memorable ever"<<endl;
+cout<<"Please pick an option to proceed"<<endl;
+cout<<"A- sign in"<<endl;
+cout<<"B- sign up"<<endl;
+//cout<<"C- delete account"<<endl;
+cin>>enter;
+
+if (enter=='A'|| 'a')
+{
+    string email,username,password;
+    cout<<"Please enter your email ID: "<<endl;
+    cin>>email;
+    cout<<"Please enter your username: "<<endl;
+    cin>>username;
+    cout<<"Please enter your password: "<<endl;
+    cin>>password;
+}
+
+else
+{
+    string email2,username2,password2;
+    cout<<"Please enter your email ID: "<<endl;
+    cin>>email2;
+    cout<<"Please enter your username: "<<endl;
+    cin>>username2;
+    cout<<"Please enter your password: "<<endl;
+    cin>>password2;
+    if (password2.size()<8)
+    {
+        cout<<"Erorr please enter a password longer than 8 characters"<<endl;
+        cin>>password2;
+    }
+}
+
+
+
+
+    
+
+    return 0;
+}
